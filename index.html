@@ -1,1 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .parent {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+        }
+
+
+        .list {
+            display: flex;
+            gap: 50px;
+            font-size: 20px;
+            list-style: none;
+
+        }
+
+        .list a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .icon-div {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            color: aliceblue;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .btn1 {
+            padding: 10px;
+            border-radius: 50px;
+            border: none;
+            background-color: #A0876E;
+            color: aliceblue;
+        }
+
+
+        .hero {
+            background-image: url(https://startersites.io/blocksy/justice/wp-content/uploads/2021/10/smiling-professor-smoking-a-pipe-and-reading-RM4E52Y@2x.jpg);
+            height: 130vh;
+            background-size: cover;
+            background-position: center;
+            margin-top: -07%;
+            background-repeat: no-repeat;
+            align-items: center;
+            display: flex;
+            color: aliceblue;
+            padding-left: 110px;
+
+
+        }
+
+        .heading h1 {
+            font-size: 90px;
+        }
+
+        .heading p {
+            font-size: 20px;
+        }
+
+        .icon-1 {
+            padding: 20px;
+            border-radius: 8px;
+            border: none;
+            color: aliceblue;
+            font-weight: 200px;
+            background-color: #A0876E;
+        }
+
+        .icon-2 {
+
+            padding: 20px;
+            border-radius: 8px;
+            border: none;
+            color: aliceblue;
+            font-weight: 200px;
+            background-color: #322F2D
+        }
+
+        .btn2 {
+            display: flex;
+            gap: 30px;
+            padding-top: 40px;
+        }
+
+        .line {
+            border: 1px solid darkgrey;
+            margin-top: 50px;
+        }
+
+        .heading {
+            width: 90%;
+
+        }
+
+        .main1 {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .button1 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .box {
+            background-color: #A0876E;
+            border-radius: 50px;
+            padding: 20px;
+        }
+
+        .color {
+            color: #A0876E;
+        }
+
+        .paragraph {
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #F1F1F1;
+
+        }
+
+        .h-para {
+            font-size: 35px;
+            color: #4e4946;
+            font-family: initial;
+        }
+
+        .para {
+            color: #4e4946;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            line-height: 35spx;
+        }
+
+        .top {
+            align-items: center;
+            display: flex;
+            margin-left: 40px;
+            gap: 20px;
+
+        }
+
+        .top i {
+            font-size: 30px;
+            color: rgb(92, 84, 77)
+        }
+
+        .top h3 {
+
+            font-size: 30px;
+
+            color: rgb(92, 84, 77);
+        }
+
+        .offers p {
+            color: rgb(63, 66, 69);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 90px;
+            margin-top: -20px;
+
+
+        }
+
+        .Services {
+            display: grid;
+            align-items: center;
+            justify-content: space-around;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 8%;
+
+        }
+
+        .main2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 10px;
+            color: aliceblue;
+            background-color: #5C544D;
+            padding: 50px;
+            line-height: 10px;
+            height: auto;
+
+            margin-top: 50px;
+            width: 84%;
+            margin-left: 70px;
+        }
+
+        .main2 h1 {
+            font-size: 60px;
+        }
+
+        .main2 p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .line1 {
+            border: 2px solid #A0876E;
+            width: 7%;
+            margin: auto;
+            margin-top: 80px;
+
+        }
+
+        .hero2 {
+            background-image: url(https://startersites.io/blocksy/justice/wp-content/uploads/2021/10/legal-practice-area-cover@2x.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200vh;
+            width: 100%;
+            padding-top: 14%;
+            position: relative;
+
+
+        }
+
+        .hero2::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, .6);
+
+        }
+
+        .practice {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 80px;
+            gap: 20px;
+        }
+
+
+        .one i {
+            color: #A0876E;
+            font-size: 40px;
+
+        }
+
+        .one h3 {
+            color: aliceblue;
+            font-size: 25px;
+
+        }
+
+        .legal p {
+            color: white;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 50px;
+        }
+
+        .practice-btn {
+            display: block;
+            margin: auto;
+            background-color: #A0876E;
+            color: aliceblue;
+            padding: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 60px;
+        }
+
+        .main3 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+
+        }
+
+        .h-one {
+            font-size: 25px;
+            color: #5C544D;
+
+        }
+
+        .h-two {
+            font-size: 22px;
+            line-height: 35px;
+            color: #5C544D;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .blue {
+            background-image: url(./img/team-member-01.jpg);
+            height: 70vh;
+            width: 30%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+
+
+        }
+
+        .blue h2 {
+            position: absolute;
+            bottom: 30px;
+            color: aliceblue;
+            margin-left: 25px;
+        }
+
+        .blue p {
+            position: absolute;
+            bottom: 10px;
+            color: #A0876E;
+            margin-left: 25px;
+
+        }
+
+        .black {
+            background-image: url(./img/team-member-2.jpg);
+            height: 70vh;
+            width: 30%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+
+        }
+
+        .black h2 {
+            position: absolute;
+            bottom: 30px;
+            color: aliceblue;
+            margin-left: 25px;
+        }
+
+        .black p {
+            position: absolute;
+            bottom: 10px;
+            color: #A0876E;
+            margin-left: 25px;
+
+        }
+
+
+        .yellow {
+
+            background-image: url(./img/team-member-3.jpg);
+            height: 70vh;
+            width: 30%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 8px;
+        }
+
+        .yellow h2 {
+            position: absolute;
+            bottom: 30px;
+            color: aliceblue;
+            margin-left: 25px;
+        }
+
+        .yellow p {
+            position: absolute;
+            bottom: 10px;
+            color: #A0876E;
+            margin-left: 25px;
+
+        }
+
+        .photos {
+            position: relative;
+            display: flex;
+            margin-top: 60px;
+            justify-content: space-around;
+            gap: 10px;
+
+            border: none;
+            border-radius: 8px;
+        }
+
+        .MAIN-1 {
+            position: relative;
+            background-color: #191919;
+            height: 110vh;
+            margin-top: 110px;
+
+        }
+
+        .H-1 {
+            color: #A0876E;
+            font-size: 30px;
+            position: absolute;
+            top: 20%;
+            left: 09%;
+
+        }
+
+        .MAIN-1 p {
+            color: aliceblue;
+            font-size: 30px;
+            position: absolute;
+            top: 38%;
+            left: 10%;
+            line-height: 50px;
+
+        }
+
+        .H-3 {
+            color: #F1F1F1;
+            position: absolute;
+            bottom: 06%;
+            left: 10%;
+            font-size: 19px;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .img {
+            position: absolute;
+            right: 0;
+            height: 400px;
+        }
+
+        .img-1 {
+            position: absolute;
+            top: 35%;
+            left: 05%;
+        }
+
+        .MAIN-2 {
+            display: flex;
+            justify-content: space-around;
+            height: 30vh;
+            align-items: center;
+
+
+        }
+
+        .img-2 {
+            width: 150px;
+            height: 50px;
+        }
+
+        .hero-3 {
+            background-image: url(https://startersites.io/blocksy/justice/wp-content/uploads/2021/10/contact-cta-cover@2x.webp);
+            height: 160vh;
+            position: relative;
+
+        }
+
+        .hero-3::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, .7);
+        }
+
+        .MAIN-3 {
+            position: absolute;
+            top: 20%;
+            left: 05%;
+
+        }
+
+        .form {
+            font-size: 40px;
+            color: #F1F1F1;
+        }
+
+        .office {
+            align-items: center;
+            display: flex;
+
+            gap: 20px;
+
+        }
+
+        .office i {
+            font-size: 25px;
+            color: #A0876E;
+
+
+
+
+        }
+
+        .office h3 {
+            font-size: 30px;
+            color: #F1F1F1;
+            line-height: 2px;
+
+
+
+        }
+
+        .MAIN-3 p {
+            color: #F1F1F1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 40px;
+            line-height: 30px;
+
+        }
+
+        .form-box {
+            background: #fff;
+            padding: 45px;
+            border-radius: 15px;
+            position: absolute;
+            top: 15%;
+            right: 5%;
+        }
+
+        .row {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 25px;
+
+        }
+
+        .group {
+            flex: 1;
+        }
+
+        .group label {
+            display: flex;
+            margin-bottom: 8px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .group input,
+        .group select,
+        .group textarea {
+            width: 95%;
+            padding: 15px;
+            border: none;
+            background: #f3efef;
+            color: #3f4245;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 45vh;
+
+        }
+
+        .required {
+            color: red;
+        }
+
+        .btn-1 {
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px;
+            background-color: #A0876E;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+
+        .btn-1:hover {
+            background-color: #5C544D;
+        }
+
+
+
+
+
+
+
+
+
+        .footer {
+            background: #332d26;
+            padding: 60px;
+        }
+
+        .footer1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .fbox h2 {
+            color: white;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .fbox p {
+            color: #bfb8b0;
+            line-height: 25px;
+            font-size: 18px;
+        }
+
+        .social {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social i {
+            width: 42px;
+            height: 42px;
+            background: #433b33;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .social i:hover{
+            color: #F1F1F1;
+            background-color: grey;
+
+        }
+
+        .footbtn {
+            width: 220px;
+            height: 50px;
+            background: #433b33;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            margin-top: 15px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            cursor: pointer;
+
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .footbtn:hover{
+            color: #F1F1F1;
+            background-color: #39342D;
+        }
+
+        .footbtn i {
+            color: #B0906D;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        hr {
+            margin-top: 60px;
+            border: 1px solid #4a433c;
+        }
+
+        .footer2 {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 35px;
+        }
+
+        .footer2 p {
+            color: #bfb8b0;
+            font-size: 17px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="main">
+    <div class="parent">
+        
+        <img width="200px" src="./img/logos.svg" alt="">
+        
+        <ul class="list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Service.html">Services</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./Contact.html">Contacts</a></li>
+        </ul>
+    </div>
+    <div class="icon-div">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <button class="btn1"> +123 456 7890</button>
+
+    </div>
+</div>
+<!--hero section start-->
+
+<div class="hero">
+    <div class="heading">
+        <h1>You Deserve <br>Fair Trial</h1>
+        <p> Get free legal advise from our experienced lawyers</p>
+
+        <div class="btn2">
+            <button class="icon-1">FREE CONSULTATION</button>
+            <button class="icon-2">LEARN MORE</button>
+        </div>
+        <div class="line">
+        </div>
+
+        <div class="main1">
+
+            <div class="button1">
+                <div class="box">
+                    <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                </div>
+                <h3><span class="color">Book An</span> Appointment</h3>
+            </div>
+
+
+            <div class="button1">
+                <div class="box">
+                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                </div>
+                <h3><span class="color">Free Case</span> Evalution</h3>
+            </div>
+
+
+            <div class="button1">
+                <div class="box">
+                    <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                </div>
+                <h3><span class="color">Pay The Bill</span> Online</h3>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<!--paragraph started-->
+<div class="paragraph">
+    <div class="h-para">
+        <h2>Legal advice and <br> other assistance</h2>
+
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <br> diam nonumy eirmod tempor invidunt ut
+            labore et dolore <br> magna aliquyam erat, sed diam voluptua vero eos et accusam <br> et justo duo.</p>
+
+    </div>
+</div>
+
+<div class="Services">
+
+    <div class="offers">
+        <div class="top">
+            <i class="fa fa-gavel" aria-hidden="true"></i>
+            <h3>Get Your Legal Advice</h3>
+        </div>
+        <p>Nibh tortor id aliquet lectus proin nibh. Pretium quam vulputate <br> dignissim suspendisse condimentum
+            bibendum.</p>
+    </div>
+
+    <div class="offers">
+        <div class="top">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <h3>Work With Experts</h3>
+        </div>
+        <p>Diam maecenas ultricies mi eget mauris pharetra et ultrices neque. Sed <br> sed risus pretium quam
+            vulputate
+            dignissim.</p>
+
+    </div>
+
+    <div class="offers">
+
+        <div class="top">
+            <i class="fa fa-database" aria-hidden="true"></i>
+            <h3>Discounted Rates</h3>
+        </div>
+        <p>Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. At urna <br> condimentum mattis
+            pellentesque id nibh</p>
+    </div>
+    <div class="offers">
+        <div class="top">
+            <i class="fa fa-folder-open" aria-hidden="true"></i>
+            <h3>Review Documents</h3>
+        </div>
+        <p>Congue quisque egestas diam in arcu cursus euismod. Semper eget duis <br> at tellus at urna condimentum
+            mattis</p>
+
+    </div>
+</div>
+
+    <div class="main2" >
+        <div>
+            <h1>123K</h1>
+            <P>Trusted Clients</P>
+
+        </div>
+
+        <div>
+            <h1>98%</h1>
+            <p>Successful Case</p>
+        </div>
+
+        <div>
+            <h1>$123M</h1>
+            <p>Money Case</p>
+        </div>
+
+        <div>
+            <h1>200</h1>
+            <p>Case Closed</p>
+        </div>
+
+
+
+    </div>
+    <!--hero2 section start-->
+
+
+    <div class="hero2">
+        <div class="line1">
+
+        </div>
+        <h1 style="text-align: center; justify-content: space-around; color: aliceblue; font-size: 50px;">Legal Practice
+            Areas</h1>
+        <p
+            style="text-align: center; justify-content: space-around; color: aliceblue; font-size: 20px; line-height: 26px;">
+            Maecenas interdum lorem eleifend orci aliquam mollis. Aliquam non rhoncus magna Suspendisse aliquet <br>
+            tincidunt enimut commodo elit feugiat aecenas nec enim.</p>
+
+
+        <div class="practice">
+            <div class="legal">
+
+                <div class="one">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <h3>Family Law</h3>
+                </div>
+
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+                <div class="one">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <h3>Banking & Finance</h3>
+                </div>
+
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+                <div class="one">
+                    <i class="fa fa-car" aria-hidden="true"></i>
+                    <h3>Car Accident</h3>
+                </div>
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+
+            </div>
+
+            <div class="legal">
+
+                <div class="one">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h3>Immigration</h3>
+                </div>
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+
+                <div class="one">
+                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    <h3>Civil Law</h3>
+                </div>
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+
+                <div class="one">
+                    <i class="fa fa-building-o" aria-hidden="true"></i>
+                    <h3>Property Law</h3>
+                </div>
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+
+            </div>
+
+            <div class="legal">
+
+                <div class="one">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <h3>Consumer Law</h3>
+                </div>
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+
+                <div class="one">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <h3>Insurance Law</h3>
+                </div>
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+
+                <div class="one">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <h3>Corporate Law</h3>
+                </div>
+                <p>Aenean non accumsan antacumsan sem <br> tempus porta nec sit amet est.</p>
+            </div>
+
+        </div>
+        <button class="practice-btn">View All Practice Areas</button>
+
+
+    </div>
+
+
+
+<div class="main3">
+    <div class="h-one">
+        <h1>Meet our Lawyers</h1>
+    </div>
+
+    <p class="h-two">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <br> sed diam nonumy eirmod tempor
+        invidunt ut labore et <br> dolore magna aliquyam erat, sed diam voluptua.</p>
+
+</div>
+</div>
+
+
+<div class="photos">
+
+    <div class="blue">
+        <h2>Eugene Grand</h2>
+        <p>partner</p>
+
+    </div>
+
+    <div class="black">
+
+        <h2>Danielle Carrol</h2>
+        <p>partner</p>
+
+
+    </div>
+
+    <div class="yellow">
+
+        <h2>George Jordan</h2>
+
+        <p>partner</p>
+
+
+    </div>
+
+</div>
+
+<div class="MAIN-1">
+    <div class="H-1">
+        <h2>Testimonials</h2>
+    </div>
+
+    <p>Mauris imperdiet orci dapibus, commodo <br> libero nec, interdum tortor. Morbi in nibh <br>faucibus, iaculis
+        lorem vitae, cursus velit. <br> Mauris in fringilla velit.</p>
+
+    <div class="H-3">
+        <h3>Jenny Doe, CEO Company Inc.</h3>
+    </div>
+    <div class="img">
+        <img style="height: 110vh;" src="./img/testimonial-person-1.png" alt="">
+    </div>
+    <div class="img-1">
+        <img style="height: 15vh;" src="./img/quote-symbol.svg" alt="">
+    </div>
+
+</div>
+
+<div class="MAIN-2">
+    <div class="img-2">
+        <img src="./img/client-logo-5.svg" alt="">
+
+    </div>
+    <div class="img-2">
+        <img src="./img/client-logo-2.svg" alt="">
+
+    </div>
+    <div class="img-2">
+        <img src="./img/client-logo-1.svg" alt="">
+
+    </div>
+    <div class="img-2">
+        <img src="./img/client-logo-3.svg" alt="">
+
+    </div>
+    <div class="img-2">
+        <img src="./img/client-logo-4.svg" alt="">
+
+    </div>
+    <div class="img-2">
+        <img src="./img/client-logo-6.svg" alt="">
+
+    </div>
+</div>
+
+
+<div class="hero-3">
+    <div class="MAIN-3">
+
+        <div class="form">
+            <h3>Get a Personal <br> Consultation</h3>
+        </div>
+
+        <div class="office">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <h3>Office</h3>
+        </div>
+        <p>304 North Cardinal St. Dorchester <br> Center, MA 02124</p>
+
+        <div class="office">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <h3>Contact</h3>
+        </div>
+        <p>info@company.com <br>contact@company.com</p>
+
+        <div class="office">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <h3>Open Hours</h3>
+        </div>
+        <p>Monday-Saturday 8 am – 6pm <br>Sunday 11am – 4pm</p>
+    </div>
+
+
+    <div class="form-box">
+
+        <div class="row">
+
+            <div class="group">
+                <label>Name <span class="required">*</span></label>
+                <input placeholder="John doe" type="text">
+            </div>
+
+            <div class="group">
+                <label>Phone <span class="required">*</span></label>
+                <input type="tel" placeholder="(+63) 555 1212" required>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="group">
+                <label>Email Address <span class="required">*</span></label>
+                <input type="email" placeholder="john.doe@gmail.com" required>
+            </div>
+
+            <div class="group">
+                <label>Service</label>
+                <select>
+                    <option>Insurance Law</option>
+                    <option>Family Law</option>
+                    <option>Business Law</option>
+                    <option>Criminal Law</option>
+                    <option>Property Law</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="group">
+            <label>Subject</label>
+            <input type="text" placeholder="Insurance Dispute Information">
+        </div>
+
+        <div class="group">
+            <label>Paragraph Text <span class="required">*</span></label>
+            <textarea placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <button class="btn-1"> REQUEST A QUOTE</button>
+
+    </div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer1">
+
+        <div class="fbox">
+
+            <img style="width: 140px;"
+                src="https://startersites.io/blocksy/justice/wp-content/uploads/2021/10/logo-light.svg" alt="">
+
+            <p>
+                Egestas purus viverra accumsan in nisl in metus dictum at <br>tempor commodo sagittis nisl rhoncus
+                mattis rhoncus urna <br> neque viverra.
+            </p>
+
+            <div class="social">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="fbox">
+
+            <h2>Overview</h2>
+
+            <p>Home</p>
+            <p>Services</p>
+            <p>About Us</p>
+            <p>Blog</p>
+
+        </div>
+
+        <div class="fbox">
+
+            <h2>Information</h2>
+
+            <p>FAQ</p>
+            <p>Site Map</p>
+            <p>Cookie Policy</p>
+            <p>Contact Us</p>
+
+        </div>
+
+        <div class="fbox">
+
+            <h2>Head Office</h2>
+
+            <p>304 North Cardinal St.</p>
+            <p>Dorchester Center, MA 02124</p>
+
+            <button class="footbtn">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                (+123) 456 7890
+            </button>
+
+            <button class="footbtn">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                info@mymail.com
+            </button>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer2">
+
+        <p>Copyright 2026 - WordPress Theme by CreativeThemes</p>
+
+        <p>Terms & Conditions | Privacy Policy</p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
